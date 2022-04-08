@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Sofia"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Practica APIs HTML</title>
+  </head>
+  <body>
+    <div class="apertura" id="apertura">
+      <h1>Seleccione el/los video/s que desea ver</h1>
+
+      <input
+        type="file"
+        id="files"
+        name="files[]"
+        multiple
+        accept="video/*"
+        onchange="handleFileSelect(evt)"
+      />
+    </div>
+
+    <div class="diVideo">
+      <figure>
+      <div class="output">
+        <output id="list"></output>
+      </div>
+      <div class="buttons" id="buttons">
+        <button onclick="document.getElementById('video').play();">
+          Reproducir
+        </button>
+        <button onclick="document.getElementById('video').pause();">
+          Pausar
+        </button>
+        <button onclick="document.getElementById('video').volume -= 0.1;">
+          Bajar volumen
+        </button>
+        <button onclick="document.getElementById('video').volume += 0.1;">
+          Subir volumen
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

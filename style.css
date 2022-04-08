@@ -1,0 +1,59 @@
+* {
+  background-color: rgb(213, 230, 220);
+}
+
+.apertura {
+  text-align: center;
+  margin: 55px;
+  color: darkgreen;
+  font-family: Sofia;
+  font-size: 20px;
+  border: 2px dotted darkgreen;
+  padding: 20px;
+  border-radius: 0px 30px 0px 30px;
+  box-shadow: 0 0.6em 0.6em -0.4em;
+}
+
+button {
+  border-color: darkgreen;
+  border-width: 2px;
+  border-style: dotted;
+  color: darkgreen;
+  background: none;
+  margin: 2.5px;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 0px 10px 0px 10px;
+  font-family: Sofia;
+  font-size: 15px;
+}
+
+button:hover,
+input:hover {
+  border-color: var(--hover);
+  color: darkgreen;
+  box-shadow: 0 0.6em 0.6em -0.4em;
+  transform: translateY(-0.25em);
+}
+
+.thumb {
+  height: 500px;
+  border: 7px dotted darkgreen;
+  border-radius: 0px 30px 0px 30px;
+  margin: 10px 5px 0 0;
+  box-shadow: 0 0.8em 0.8em -0.4em;
+}
+
+.diVideo,
+.buttons,
+.output {
+  display: flex;
+  margin: 20px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons {
+  display: none;
+}
